@@ -18,7 +18,9 @@ try: from google import genai
 except:pass
 try: from google.genai import types as genai_types
 except: pass
-try: from mistralai import Mistral, SDKError
+try: from mistralai.client import Mistral
+except: pass
+try: from mistralai.client.errors import SDKError
 except: pass
 try: from llama_cpp import Llama  # local inference
 except: pass

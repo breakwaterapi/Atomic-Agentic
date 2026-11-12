@@ -25,7 +25,7 @@ except: OpenAI = None
 try: from google import genai
 except: genai = None
 # Mistral
-try: from mistralai import Mistral
+try: from mistralai.client import Mistral
 except: Mistral = None
 # Lamma-CPP-Python
 try: from llama_cpp import Llama
